@@ -9,7 +9,11 @@ public class Rectangle implements Shape {
         this.width = width;
     }
 
-    public double getArea() {
+    public double area() {
         return height * width;
+    }
+
+    public void draw(){
+        System.out.println("Shape printed\n" + "Its area is " + area());
     }
 }

@@ -7,7 +7,11 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
-    public double getArea() {
+    public double area() {
         return Math.PI * radius * radius;
+    }
+
+    public void draw(){
+        System.out.println("Shape printed\n" + "Its area is " + area());
     }
 }
