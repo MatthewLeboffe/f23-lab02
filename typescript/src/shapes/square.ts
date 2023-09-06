@@ -1,16 +1,11 @@
 import { Shape } from "./shape"
 
-interface Square extends Shape {
-    sideLen: number;
-}
-
-function newSquare(sideLen: number): Square {
+function newSquare(sideLen: number): Shape{
     return {
-        sideLen,
         area: function (): number {
             return sideLen * sideLen
         }
     }
 }
 
-export { Square, newSquare }
+export {newSquare }
